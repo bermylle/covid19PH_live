@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> PH LIVE COVID19 Count </title>
+</head>
+
+<body>
+	<table border = 1>
+         {% for key,cases in cases.items() %}
+            <tr>
+            	<th> {{ key }} </th>
+               <th> {{ cases }} </th>
+            </tr>
+         {% endfor %}
+      </table>
+	
+</body>
+
+</html>

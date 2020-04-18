@@ -12,11 +12,16 @@ covid = Covid()
 
 # get ph data
 ph_cases = covid.get_status_by_country_name("philippines")
+active = covid.get_total_active_cases()
 
-active_cases = ph_cases["active"]
-
-@app.route('/')
+print(ph_cases['confirmed'])
+# MAIN
+@app.route('/', methods = ['POST', 'GET'])
 def index():
+	return render_template('index.html', cases = ph_cases)
+
+@app.route('/ph')
+def ph():
 	return ph_cases
 
 app.run()
