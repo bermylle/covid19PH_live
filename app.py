@@ -23,7 +23,7 @@ death_case = {'deaths' :  ph_cases.get("deaths")}
 
 
 # MAIN
-@app.route('/', methods = ['POST', 'GET'])
+@app.route('/')
 def index():
 	return render_template('index.html', confirmed = confirmed_case, active = active_case, recovered = recovered_case, death = death_case)
 
