@@ -24,11 +24,21 @@ death_case = {'deaths' :  ph_cases.get("deaths")}
 
 # MAIN
 @app.route('/')
+@app.route('/home')
 def index():
-	return render_template('index.html', confirmed = confirmed_case, active = active_case, recovered = recovered_case, death = death_case)
+	return render_template('home.html', confirmed = confirmed_case, active = active_case, recovered = recovered_case, death = death_case)
 
-@app.route('/ph')
-def ph():
-	return ph_cases
+@app.route('/cities')
+def cities():
+	return render_template('cities.html')
+
+
+@app.route('/contact')
+def contact():
+	return render_template('contact.html')
+
+@app.route('/about')
+def about():
+	return render_template('about.html')
 
 app.run()
