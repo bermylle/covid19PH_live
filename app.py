@@ -32,7 +32,6 @@ def index():
 def cities():
 	return render_template('cities.html')
 
-
 @app.route('/contact')
 def contact():
 	return render_template('contact.html')
