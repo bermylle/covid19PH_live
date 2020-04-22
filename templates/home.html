@@ -1,0 +1,62 @@
+{% extends "layout.html" %} 
+
+{% block body %}
+<div class="container" style="margin-top: 8%;">
+    <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Confirmed Cases</h4>
+            </div>
+            <div class="card-body">
+                {% for key, confirmed in confirmed.items() %}
+                <h1 class="card-title pricing-card-title" style="color: #30475e"> {{confirmed}}<small class="text-muted"></small></h1> {% endfor %}
+            </div>
+        </div>
+</div>
+</div>
+<div class="container" style="margin-top: 1%;">
+    <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm ">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Active Cases</h4>
+            </div>
+            <div class="card-body">
+                {% for key, active in active.items() %}
+                <h1 class="card-title pricing-card-title" style="color: #d8345f"> {{active}}<small class="text-muted"></small></h1> {% endfor %}
+            </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Recovered</h4>
+            </div>
+            <div class="card-body">
+                {% for key, recovered in recovered.items() %}
+                <h1 class="card-title pricing-card-title"  style="color: #16817a"> {{recovered}}<small class="text-muted"></small></h1> {% endfor %}
+            </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Deaths</h4>
+            </div>
+            <div class="card-body">
+                {% for key, death in death.items() %}
+                <h1 class="card-title pricing-card-title"> {{death}}<small class="text-muted"></small></h1> {% endfor %}
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
+
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("navbarNav");
+var btns = header.getElementsByClassName("nav-link");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+</script>
