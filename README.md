@@ -7,7 +7,7 @@
 ![Screenshot](https://github.com/bermylle/covid19PH_live/blob/master/Readme/covid19.PNG)
 
 
-## How to Install
+## Installation
 >##### 1. git clone repo
 >##### 2. Go into directory and type pip install -r requirements.txt
 >##### 3. pipenv shell
