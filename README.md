@@ -4,7 +4,7 @@
 > - Data from John Hopkins University API https://ahmednafies.github.io/covid/john_hopkins/
 
 ## Design
-![Screenshot](https://github.com/bermylle/covid19PH_live/blob/master/Readme/covid19.PNG)
+![Screenshot](https://github.com/bermylle/covid19PH_live/blob/master/Readme/img.PNG)
 
 
 ## Installation
