@@ -8,7 +8,7 @@
 
 
 ## Installation
->##### 1. git clone repo
+>##### 1. git clone https://github.com/bermylle/covid19PH_live.git
 >##### 2. Go into directory and type pip install -r requirements.txt
 >##### 3. pipenv shell
 >##### 4. python app.py 
