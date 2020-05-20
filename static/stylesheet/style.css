@@ -2,8 +2,6 @@
 	font-size: 50px;
 	color: blue;
 }
-html,
-
 
 .footer-margin {
   height: 10110px;
@@ -15,7 +13,38 @@ html,
 
 /* Other Classes for Page Styling */
 
-body {
-  background: #007bff;
-  background: linear-gradient(to right, #614385 , #516395);
+.bg-img {
+
+  background-color: #2B3856; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */ /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.graph-style {
+	width: 70%;
+	background-color: #f8f3eb;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+}
+.source-ref {
+	margin-top: 2%;
+	 width: 70%;
+}
+@media only screen and (max-width: 600px) {
+  .graph-style {
+    width: 100%;
+	background-color: #f8f3eb;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+  }
+
+  .source-ref {
+	margin-top: 2%;
+	 width: 70%;
+	}
 }
