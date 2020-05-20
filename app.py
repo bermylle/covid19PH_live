@@ -15,20 +15,11 @@ covid = Covid()
 # get ph data
 ph_cases = covid.get_status_by_country_name("philippines")
 
-# Database for graphs
-
+# JHU API
 confirmed_case = {'confirmed' : ph_cases.get("confirmed")}
 active_case = {'active' : ph_cases.get("active")}
 recovered_case = {'recovered' : ph_cases.get("recovered")}
 death_case = {'deaths' :  ph_cases.get("deaths")}
-
-daily_count = []
-
-for value in range(len(ph_confirmed) - 20,len(ph_confirmed)):
-	if (value != len(ph_confirmed) - 1):
-		daily_count.append(ph_confirmed[value + 1] - ph_confirmed[value])
-
-print(ph_confirmed[-2] - ph_confirmed[-3])
 
 
 # MAIN
