@@ -4,6 +4,7 @@ from datasets.world_data import data_world
 ph_data = data_world["Philippines"] # SAMPLE DATA : {'date': '2020-5-15', 'confirmed': 12091, 'deaths': 806, 'recovered': 2460}
 
 ph_dates = []
+ph_dates_daily = []
 ph_confirmed = []
 ph_recoveries = []
 ph_deaths = []
@@ -27,3 +28,7 @@ for values in ph_data:
 for values in ph_data:
 	if values["confirmed"] >= 100:
 		ph_deaths.append(values["deaths"])
+
+for value in range(len(ph_confirmed) - 20,len(ph_confirmed)):
+	if (value != len(ph_confirmed) - 1):
+		ph_dates_daily.append(values["date"])

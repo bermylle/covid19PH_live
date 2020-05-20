@@ -24,7 +24,7 @@ death_case = {'deaths' :  ph_cases.get("deaths")}
 
 daily_count = []
 
-for value in range(1,len(ph_confirmed)):
+for value in range(len(ph_confirmed) - 20,len(ph_confirmed)):
 	if (value != len(ph_confirmed) - 1):
 		daily_count.append(ph_confirmed[value + 1] - ph_confirmed[value])
 	
@@ -47,7 +47,7 @@ def graphs():
 def daily():
 	
 	return render_template('daily-graph.html', ph_confirmed = ph_confirmed, 
-		ph_recoveries = ph_recoveries, ph_deaths = ph_deaths, ph_dates = ph_dates, daily_count = daily_count)
+		ph_recoveries = ph_recoveries, ph_deaths = ph_deaths, ph_dates = ph_dates_daily, daily_count = daily_count)
 if __name__ == '__main__':
     # Threaded option to enable multiple instances for multiple user access support
     app.run(threaded=True, port=5000)
