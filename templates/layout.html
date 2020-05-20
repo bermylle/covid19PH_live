@@ -13,14 +13,15 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='stylesheet/style.css') }}">
 </head>
 
-<body class="d-flex flex-column bg-img">
+<body class="d-flex flex-column" style="background-color: #2B3856;">
 
     {% include 'navbar.html' %}
 
-    {% block body %} {% endblock %}
+    
 
     {% block daily_data %} {% endblock %}
     {% block total_data %} {% endblock %}
+    {% block body %} {% endblock %}
     <div class="container source-ref">
     <div class="card-deck mb-3 text-center">
         <div class="card mb-4 shadow-sm">
