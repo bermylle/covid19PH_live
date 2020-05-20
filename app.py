@@ -27,7 +27,8 @@ daily_count = []
 for value in range(len(ph_confirmed) - 20,len(ph_confirmed)):
 	if (value != len(ph_confirmed) - 1):
 		daily_count.append(ph_confirmed[value + 1] - ph_confirmed[value])
-	
+
+print(ph_confirmed[-2] - ph_confirmed[-3])
 
 
 # MAIN
