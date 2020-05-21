@@ -4,7 +4,7 @@ var config = {
    options: {
     title: {
       display: true,
-      text: 'Last 20 days of daily confirmed cases in the Philippines'
+      text: 'Daily confirmed cases in the Philippines'
     },
     scales: {
         yAxes: [{

@@ -29,13 +29,13 @@ for values in ph_data:
 	if values["confirmed"] >= 100:
 		ph_deaths.append(values["deaths"])
 
-for value in range(len(ph_data) - 19,len(ph_data)):
+for value in range(len(ph_data) - 29,len(ph_data)):
 	if (value != len(ph_confirmed)):
 		ph_dates_daily.append(ph_data[value]["date"])
 
 
 daily_count = []
 
-for value in range(len(ph_confirmed) - 20,len(ph_confirmed)):
+for value in range(len(ph_confirmed) - 30,len(ph_confirmed)):
 	if (value != len(ph_confirmed) - 1):
 		daily_count.append(ph_confirmed[value + 1] - ph_confirmed[value])
