@@ -1,4 +1,19 @@
 from datasets.world_data import data_world
+from covid import Covid
+
+# by default data source is "john_hopkins"
+covid = Covid()
+
+# get ph data
+ph_cases = covid.get_status_by_country_name("philippines")
+
+# JHU API
+confirmed_case = ph_cases.get("confirmed")
+active_case = ph_cases.get("active")
+recovered_case = ph_cases.get("recovered")
+death_case = ph_cases.get("deaths")
+
+
 
 # DATA SETS FOR PH
 ph_data = data_world["Philippines"] # SAMPLE DATA : {'date': '2020-5-15', 'confirmed': 12091, 'deaths': 806, 'recovered': 2460}
