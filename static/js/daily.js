@@ -19,7 +19,7 @@ var line = new Chart(ctx, {
   },
   type: 'line',
   data: {
-    labels: ph_dates,
+    labels: ph_dates_daily,
     datasets: [{ 
         data: daily_count,
         label: 'Confirmed Cases',

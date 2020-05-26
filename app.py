@@ -18,15 +18,14 @@ app.config["DEBUG"] = True
 def daily():
 	return render_template('daily-graph.html', ph_confirmed = ph_confirmed, 
 		ph_recoveries = ph_recoveries, 
-		ph_deaths = ph_deaths, ph_dates = ph_dates_daily, 
-		daily_count = daily_count,  confirmed = confirmed_case, 
+		ph_deaths = ph_deaths, ph_dates_daily = ph_dates_daily, ph_dates = ph_dates,
+		daily_count = daily_count,  
+
+
+		confirmed = confirmed_case, 
 		active = active_case, recovered = recovered_case, deaths = death_case)
 
-@app.route('/total-graph')
-def graphs():
-	
-	return render_template('total-graph.html', ph_confirmed = ph_confirmed, 
-		ph_recoveries = ph_recoveries, ph_deaths = ph_deaths, ph_dates = ph_dates, daily_count = daily_count)
+
 
 if __name__ == '__main__':
     # Threaded option to enable multiple instances for multiple user access support

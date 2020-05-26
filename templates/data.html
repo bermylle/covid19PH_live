@@ -1,81 +1,41 @@
-{% extends "layout.html" %} 
-
-
-{% block main_data %}
+{% extends "layout.html" %} {% block main_data %}
 <div class="container-fluid">
-    <div class="card-deck mb-3 text-center row mt-3  ml-2 mr-1">
-        <div class="card shadow-sm col-sm-3 col-sm-3">
+    <div class="card-deck text-center row mb-3 mt-3 ml-2 mr-1">
+        <div class="card shadow-sm">
             <div class="card-header">
                 <h4 class="my-0 font-weight-normal">Confirmed</h4>
             </div>
             <div class="card-body">
-
-                <h1 class="card-title pricing-card-title"  style="color: #16817a"> {{confirmed}}<small class="text-muted"></small></h1> 
-
+                <h1 class="card-title pricing-card-title" style="color: #16817a;">{{confirmed}}<small class="text-muted"></small></h1>
             </div>
         </div>
-        <div class="card shadow-sm col-sm-3 col-sm-3">
+        <div class="card shadow-sm ">
             <div class="card-header">
                 <h4 class="my-0 font-weight-normal">Active Cases</h4>
             </div>
             <div class="card-body">
-
-                <h1 class="card-title pricing-card-title" style="color: #d8345f"> {{active}}<small class="text-muted"></small></h1> 
-
+                <h1 class="card-title pricing-card-title" style="color: #d8345f;">{{active}}<small class="text-muted"></small></h1>
             </div>
         </div>
-        <div class="card  shadow-sm col-sm-3 col-sm-3">
+        <div class="card shadow-sm">
             <div class="card-header">
                 <h4 class="my-0 font-weight-normal">Recovered</h4>
             </div>
             <div class="card-body">
-
-                <h1 class="card-title pricing-card-title"  style="color: #16817a"> {{recovered}}<small class="text-muted"></small></h1> 
-
+                <h1 class="card-title pricing-card-title" style="color: #16817a;">{{recovered}}<small class="text-muted"></small></h1>
             </div>
         </div>
 
-        <div class="card shadow-sm col-sm-3 col-lg-3">
+        <div class="card shadow-sm">
             <div class="card-header">
                 <h4 class="my-0 font-weight-normal">Deaths</h4>
             </div>
             <div class="card-body">
-
-                <h1 class="card-title pricing-card-title"> {{deaths}}<small class="text-muted"></small></h1> 
-
-            </div>
-        </div>
-
-    </div>
-
-    <div class="row card-deck mr-1 ml-2">
-        {% block totala %} {% endblock %}
-        <div class="card text-center col-md-6 ">
-            <div class="card-header">
-                Daily Confirmed Cases
-            </div>
-            <div class="card-body">
-                {% block daily_data_total %} {% endblock %}
-            </div>
-        </div>
-
-        <div class="card text-center col-md-6 ">
-            <div class="card-header">
-                Daily Confirmed Cases
-            </div>
-            <div class="card-body">
-                {% block total %} {% endblock %}
+                <h1 class="card-title pricing-card-title">{{deaths}}<small class="text-muted"></small></h1>
             </div>
         </div>
     </div>
-
-
+    {% block daily_data_total %} {% endblock %}
 </div>
 
-
-
-
 {% endblock %}
-
-
-

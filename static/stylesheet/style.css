@@ -13,12 +13,10 @@
 
 /* Other Classes for Page Styling */
 
-.bg-img {
+.bg-color {
 
-  background-color: #2B3856; /* Used if the image is unavailable */
-  height: 500px; /* You must set a specified height */
-  background-position: center; /* Center the image */ /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-color: #fce8d5; /* Used if the image is unavailable */
+  
 }
 
 .graph-style {
@@ -42,7 +40,7 @@
 	margin-right: auto;
 	margin-top: 2%;
   }
-
+}
 .dashboard-maindata {
 	margin-top: 200px;
 }
@@ -51,4 +49,8 @@
 	height: 200px;
 }
 
+/*.bg-primary { 		card
+    background-color: #303960!important;
 }
+*/
+

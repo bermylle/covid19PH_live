@@ -1,30 +1,47 @@
 {% extends "data.html" %}
 
 {% block daily_data_total %} 
-<div class="">
-	<canvas id="line-chart-daily" width="800" height="450"></canvas>
-</div>
 
-<script type="text/javascript">
-	//ph data
-	var ph_dates = JSON.parse('{{ ph_dates|tojson|safe }}');
-	var daily_count = JSON.parse('{{ daily_count|tojson|safe }}');
-	
-</script>
 
-{% endblock %}
 
-{% block total %}
-<div class="">
-	<canvas id="line-chart-ph" width="800" height="450"></canvas>
-</div>
-	<script type="text/javascript">
-	//ph data
+<div class="row card-deck mr-1 ml-2">
+
+	<div class="card text-center">
+		<div class="card-header">
+			Daily Confirmed Cases
+		</div>
+		<div class="card-body">
+			<div class="">
+				<canvas id="line-chart-daily" ></canvas>
+			</div>
+
+
+		</div>
+	</div>
+
+	<div class="card text-center ">
+		<div class="card-header">
+			Daily Confirmed Cases
+		</div>
+		<div class="card-body">
+			<div class="">
+				<canvas id="line-chart-ph" ></canvas>
+			</div>
+			<script type="text/javascript">
+	//ph total data
 	var ph_recoveries = JSON.parse('{{ ph_recoveries|tojson|safe }}')
 	var ph_deaths = JSON.parse('{{ ph_deaths|tojson|safe }}');
 	var ph_dates = JSON.parse('{{ ph_dates|tojson|safe }}');
 	var ph_confirmed = JSON.parse('{{ ph_confirmed|tojson|safe }}');
+	//ph daily
+	var ph_dates_daily = JSON.parse('{{ ph_dates_daily|tojson|safe }}');
+	var daily_count = JSON.parse('{{ daily_count|tojson|safe }}');
 
 
 </script>
+</div>
+</div>
+</div>
+
 {% endblock %}
+
