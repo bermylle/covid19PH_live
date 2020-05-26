@@ -1,12 +1,15 @@
+
 // [Data Set A]
 // Line graph 
-var config = {
+
+var ctx = document.getElementById("line-chart-daily");
+var line = new Chart(ctx, {
    options: {
-    title: {
+/*    title: {
       display: true,
       text: 'Daily confirmed cases in the Philippines'
     },
-    scales: {
+*/    scales: {
         yAxes: [{
             display: true,
             ticks: {
@@ -20,15 +23,13 @@ var config = {
     datasets: [{ 
         data: daily_count,
         label: 'Confirmed Cases',
-        borderColor: "#c45850",
-        backgroundColor: "#ffffff",
-        hoverBackgroundColor: "#cceabb", 
+        borderColor: "#0a97b0",
+        backgroundColor: "white",
         lineTension: 0.3,
 
         fill: false,
       }
     ]
   }
-};
-var ctx = document.getElementById("line-chart-daily");
-var chart = new Chart(ctx, config);
+});
+

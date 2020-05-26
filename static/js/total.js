@@ -18,17 +18,19 @@ var config = {
   data: {
     labels: ph_dates,
     datasets: [{ 
+        //type: "line",
         data: ph_confirmed,
         label: 'Confirmed Cases',
         borderColor: "#c45850",
-
         fill: false
       }, { 
+        //type: "line",
         data: ph_recoveries,
         label: 'Recoveries',
         borderColor: "#3cba9f",
         fill: false
       }, { 
+        //type: "line",
         data: ph_deaths,
         label: 'Deaths',
         borderColor: "#e8c3b9",

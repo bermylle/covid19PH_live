@@ -43,5 +43,12 @@
 	margin-top: 2%;
   }
 
-  
+.dashboard-maindata {
+	margin-top: 200px;
+}
+ 
+.row-data {
+	height: 200px;
+}
+
 }
