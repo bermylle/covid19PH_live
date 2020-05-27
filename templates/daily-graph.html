@@ -5,29 +5,30 @@
 
 
 <div class="row card-deck mr-1 ml-2">
+    <div class="card text-center border-0">
+        <div class="card-header bg-primary-cards-header bg-primary-text">
+            <h4 class="my-0 font-weight-normal bg-header-text">Daily Confirmed Cases</h4>
+        </div>
+        <div class="card-body bg-primary-cards-body">
+            <div class="">
+                <canvas id="line-chart-daily"></canvas>
+            </div>
+        </div>
+    </div>
 
-	<div class="card text-center">
-		<div class="card-header">
-			Daily Confirmed Cases
-		</div>
-		<div class="card-body">
-			<div class="">
-				<canvas id="line-chart-daily" ></canvas>
-			</div>
+    <div class="card text-center border-0">
+        <div class="card-header bg-primary-cards-header bg-primary-text">
+            <h4 class="my-0 font-weight-normal bg-header-text">Total Cases</h4>
+        </div>
+        <div class="card-body">
+            <div class="">
+                <canvas id="line-chart-ph"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
 
-
-		</div>
-	</div>
-
-	<div class="card text-center ">
-		<div class="card-header">
-			Daily Confirmed Cases
-		</div>
-		<div class="card-body">
-			<div class="">
-				<canvas id="line-chart-ph" ></canvas>
-			</div>
-			<script type="text/javascript">
+<script type="text/javascript">
 	//ph total data
 	var ph_recoveries = JSON.parse('{{ ph_recoveries|tojson|safe }}')
 	var ph_deaths = JSON.parse('{{ ph_deaths|tojson|safe }}');
@@ -39,9 +40,5 @@
 
 
 </script>
-</div>
-</div>
-</div>
-
 {% endblock %}
 

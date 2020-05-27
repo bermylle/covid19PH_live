@@ -1,23 +1,6 @@
-.test1 {
-	font-size: 50px;
-	color: blue;
-}
-
-.footer-margin {
-  height: 10110px;
-}
-
-#sticky-footer {
-  flex-shrink: none;
-}
 
 /* Other Classes for Page Styling */
 
-.bg-color {
-
-  background-color: #fce8d5; /* Used if the image is unavailable */
-  
-}
 
 .graph-style {
 	width: 70%;
@@ -49,8 +32,21 @@
 	height: 200px;
 }
 
-/*.bg-primary { 		card
-    background-color: #303960!important;
+.bg-primary-cards-header { 	
+    background-color: #3c6562!important;
 }
-*/
+.bg-primary-cards-body { 	
+    background-color: #ececec!important;
+}
 
+.bg-header-text {
+	color: white;
+}
+
+.bg-body-text {
+	color: black;
+}
+
+.bg-color {
+  background-color: #222831;
+}

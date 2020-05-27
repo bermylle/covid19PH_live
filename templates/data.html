@@ -1,39 +1,43 @@
 {% extends "layout.html" %} {% block main_data %}
 <div class="container-fluid">
     <div class="card-deck text-center row mb-3 mt-3 ml-2 mr-1">
-        <div class="card shadow-sm">
-            <div class="card-header">
-                <h4 class="my-0 font-weight-normal">Confirmed</h4>
+
+        <div class="card shadow-sm border-0">
+            <div class="card-header bg-primary-cards-header">
+                <h4 class="my-0 font-weight-normal bg-header-text">Confirmed</h4>
             </div>
-            <div class="card-body">
-                <h1 class="card-title pricing-card-title" style="color: #16817a;">{{confirmed}}<small class="text-muted"></small></h1>
-            </div>
-        </div>
-        <div class="card shadow-sm ">
-            <div class="card-header">
-                <h4 class="my-0 font-weight-normal">Active Cases</h4>
-            </div>
-            <div class="card-body">
-                <h1 class="card-title pricing-card-title" style="color: #d8345f;">{{active}}<small class="text-muted"></small></h1>
-            </div>
-        </div>
-        <div class="card shadow-sm">
-            <div class="card-header">
-                <h4 class="my-0 font-weight-normal">Recovered</h4>
-            </div>
-            <div class="card-body">
-                <h1 class="card-title pricing-card-title" style="color: #16817a;">{{recovered}}<small class="text-muted"></small></h1>
+            <div class="card-body bg-primary-cards-body">
+                <h1 class="card-title pricing-card-title bg-body-text">{{confirmed}}<small class="text-muted"></small></h1>
             </div>
         </div>
 
-        <div class="card shadow-sm">
-            <div class="card-header">
-                <h4 class="my-0 font-weight-normal">Deaths</h4>
-            </div>
-            <div class="card-body">
-                <h1 class="card-title pricing-card-title">{{deaths}}<small class="text-muted"></small></h1>
+        <div class="card shadow-sm border-0">
+            <div class="card-header bg-primary-cards-header">
+                <h4 class="my-0 font-weight-normal bg-header-text">Active Cases</h4>
+            </div>                          
+            <div class="card-body bg-primary-cards-body">
+                <h1 class="card-title pricing-card-title bg-body-text">{{active}}<small class="text-muted"></small></h1>
             </div>
         </div>
+
+        <div class="card shadow-sm border-0">
+            <div class="card-header bg-primary-cards-header">
+                <h4 class="my-0 font-weight-normal bg-header-text">Recovered</h4>
+            </div>
+            <div class="card-body bg-primary-cards-body">
+                <h1 class="card-title pricing-card-title bg-body-text">{{recovered}}<small class="text-muted"></small></h1>
+            </div>
+        </div>
+
+        <div class="card shadow-sm border-0">
+            <div class="card-header bg-primary-cards-header">
+                <h4 class="my-0 font-weight-normal bg-header-text">Deaths</h4>
+            </div>
+            <div class="card-body bg-primary-cards-body">
+                <h1 class="card-title pricing-card-title bg-body-text">{{deaths}}<small class="text-muted"></small></h1>
+            </div>
+        </div>
+
     </div>
     {% block daily_data_total %} {% endblock %}
 </div>

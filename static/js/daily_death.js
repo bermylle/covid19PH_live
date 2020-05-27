@@ -1,7 +1,3 @@
-
-// [Data Set A]
-// Line graph 
-
 var ctx = document.getElementById("line-chart-daily");
 var line = new Chart(ctx, {
    options: {
@@ -23,9 +19,9 @@ var line = new Chart(ctx, {
     datasets: [{ 
         data: daily_count,
         label: 'Confirmed Cases',
-        borderColor: "#0a97b0",
-        backgroundColor: "white",
-        lineTension: 0.3,
+        borderColor: "#ffa34d",
+        backgroundColor: "#a0204c",
+        lineTension: 0.4,
 
         fill: false,
       }
