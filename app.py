@@ -13,7 +13,7 @@ app.config["DEBUG"] = True
 @app.route('/')
 @app.route('/home')
 def daily():
-	return render_template('daily-graph.html', ph_confirmed = ph_confirmed, 
+	return render_template('index.html', ph_confirmed = ph_confirmed, 
 		ph_recoveries = ph_recoveries, 
 		ph_deaths = ph_deaths, ph_dates_daily = ph_dates_daily, ph_dates = ph_dates,
 		daily_count = daily_count,  

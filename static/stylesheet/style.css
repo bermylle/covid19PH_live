@@ -1,5 +1,14 @@
+#page-content {
+  flex: 1 0 auto;
+}
 
-/* Other Classes for Page Styling */
+#sticky-footer {
+  flex-shrink: none;
+}
+
+.gcq {
+	font-size: 30;
+}
 
 
 .graph-style {
