@@ -9,9 +9,6 @@ app = flask.Flask(__name__)
 app.config["DEBUG"] = True
 
 
-
-
-
 # MAIN
 @app.route('/')
 @app.route('/home')

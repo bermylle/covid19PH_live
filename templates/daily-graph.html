@@ -3,7 +3,7 @@
 {% block daily_data_total %} 
 
 
-
+<!-- two graphs -->
 <div class="row card-deck mr-1 ml-2">
     <div class="card text-center border-0">
         <div class="card-header bg-primary-cards-header bg-primary-text">
@@ -28,17 +28,28 @@
     </div>
 </div>
 
+<!-- below two graphs -->
+<div class="card-deck text-center row mb-3 mt-3 ml-2 mr-1">
+    <div class="card shadow-sm border-0">
+        <div class="card-header bg-primary-cards-header">
+            <h4 class="my-0 font-weight-normal bg-header-text">Confirmed Cases as of {{ph_dates[-1]}}</h4>
+        </div>
+        <div class="card-body bg-primary-cards-body">
+            <h1 class="card-title pricing-card-title bg-body-text">Up by {{daily_count[-1]}}<small class="text-muted"></small></h1>
+        </div>
+    </div>
+</div>
+
+
+
+
 <script type="text/javascript">
-	//ph total data
 	var ph_recoveries = JSON.parse('{{ ph_recoveries|tojson|safe }}')
 	var ph_deaths = JSON.parse('{{ ph_deaths|tojson|safe }}');
 	var ph_dates = JSON.parse('{{ ph_dates|tojson|safe }}');
 	var ph_confirmed = JSON.parse('{{ ph_confirmed|tojson|safe }}');
-	//ph daily
 	var ph_dates_daily = JSON.parse('{{ ph_dates_daily|tojson|safe }}');
 	var daily_count = JSON.parse('{{ daily_count|tojson|safe }}');
-
-
 </script>
 {% endblock %}
 
