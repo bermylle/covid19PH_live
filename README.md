@@ -1,5 +1,5 @@
 # COVID19 Cases in the Philippines
-> - using Flask
+> - A practice web application made with Flask. My goal here is to implement data retrieval from API and DB.
 > - deployed in Heroku : https://covid19ph-live.herokuapp.com/
 > - Data from John Hopkins University API https://ahmednafies.github.io/covid/john_hopkins/
 
